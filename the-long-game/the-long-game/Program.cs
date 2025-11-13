@@ -23,10 +23,13 @@ namespace theLongGame
                     i = true;
                     return;
                 }
+                else
+                {
+                    score++;
+                    Console.WriteLine(score);
+                    Console.WriteLine($"You pressed the {keyInfo.Key} key");
+                }
             }
-
-            
-            Console.WriteLine($"You pressed: {keyInfo.Key}");
         }
     }
 }
