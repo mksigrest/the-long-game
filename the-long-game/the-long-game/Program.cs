@@ -15,18 +15,18 @@ namespace theLongGame
             Console.WriteLine("Hello " + name + "! Are you ready to compete?");
             Console.WriteLine("Your button pressing begins now!");
 
-            while (i = false)
+            while (i == false)
             {
                 ConsoleKeyInfo keyInfo = Console.ReadKey();
                 if (keyInfo.Key == ConsoleKey.Enter)
                 {
                     i = true;
-                    return;
                 }
                 else
                 {
                     score++;
-                    Console.WriteLine(score);
+                    Console.WriteLine();
+                    Console.WriteLine($"Your score is: {score}");
                     Console.WriteLine($"You pressed the {keyInfo.Key} key");
                 }
             }
