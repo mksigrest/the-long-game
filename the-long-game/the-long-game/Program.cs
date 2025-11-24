@@ -30,6 +30,7 @@ namespace theLongGame
                 Console.WriteLine($"Hello {name}! Are you ready to compete?");
             }
 
+            Console.WriteLine();
             Console.WriteLine("When you are done, press enter to finish.");
             Console.WriteLine("Your button pressing begins now!");
 
