@@ -22,11 +22,14 @@ namespace theLongGame
                 if (int.TryParse(oldTxt, out int oldScr))
                 {
                     score = oldScr;
-
+                    Console.WriteLine($"Welcome back {name}! Your previous score is {score}.");
                 }
             }
+            else
+            {
+                Console.WriteLine($"Hello {name}! Are you ready to compete?");
+            }
 
-            Console.WriteLine("Hello " + name + "! Are you ready to compete?");
             Console.WriteLine("Your button pressing begins now!");
 
             while (i == false)
