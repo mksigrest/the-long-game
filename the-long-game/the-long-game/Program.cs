@@ -11,7 +11,7 @@ namespace theLongGame
             int score = 0;
             bool i = false;
 
-            Console.Write("Hello Player, what is your name?: ");
+            Console.Write("Hello Player, what is your name: ");
             name = Console.ReadLine();
 
             string filePath = $"{name}.txt";
