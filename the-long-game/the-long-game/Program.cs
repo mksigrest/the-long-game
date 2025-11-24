@@ -49,6 +49,10 @@ namespace theLongGame
                     Console.WriteLine($"You pressed the {keyInfo.Key} key");
                 }
             }
+
+            File.WriteAllText(filePath, score.ToString());
+            Console.WriteLine();
+            Console.WriteLine($"Game Over! Finished with score of {score}!");
         }
     }
 }
