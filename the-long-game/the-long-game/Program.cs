@@ -18,7 +18,12 @@ namespace theLongGame
 
             if (File.Exists(filePath))
             {
+                string oldTxt = File.ReadAllText(filePath);
+                if (int.TryParse(oldTxt, out int oldScr))
+                {
+                    score = oldScr;
 
+                }
             }
 
             Console.WriteLine("Hello " + name + "! Are you ready to compete?");
