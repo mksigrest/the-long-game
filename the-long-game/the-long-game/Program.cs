@@ -13,6 +13,14 @@ namespace theLongGame
 
             Console.Write("Hello Player, what is your name?: ");
             name = Console.ReadLine();
+
+            string filePath = $"{name}.txt";
+
+            if (File.Exists(filePath))
+            {
+
+            }
+
             Console.WriteLine("Hello " + name + "! Are you ready to compete?");
             Console.WriteLine("Your button pressing begins now!");
 
